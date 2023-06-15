@@ -1,4 +1,6 @@
-This repository contains utilities used for our final project in COGS13 with Professor Rossano
+This repository contains utilities used for our final project in COGS13 with Professor Rossano. It provides a pretty hack-y pipeline for processing audio into transcripts, and identifying questions and answers in those transcripts and classifying those questions. 
+
+Everything is based on non-local AI categorization and as such all the usual concerns and biases about that that apply.
 
 ### `./gettranscript.py 'audio file path'` 
 - Returns transcript as .json, .txt, and .vtt
@@ -8,7 +10,7 @@ This repository contains utilities used for our final project in COGS13 with Pro
 
 ### `./id_questions.py 'transcript json path'`
 - Uses OpenAI text-davinci-003 model on scrolling window to extract questions.
-- This function is very expensive. For large datasets, training a less expensive classifier would be highly recommended. No model smaller than text-davinci-003 worked in our use case
+- This function is very expensive. For large datasets, training a less expensive classifier would be highly recommended. No model smaller than text-davinci-003 worked in our (untrained) use case.
 - high false positive rate
 
 ### `./autoethogram.py 'transcript analysis path'
