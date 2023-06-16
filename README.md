@@ -13,7 +13,7 @@ Everything is based on non-local AI categorization and as such all the usual con
 - This function is very expensive. For large datasets, training a less expensive classifier would be highly recommended. No model smaller than text-davinci-003 worked in our (untrained) use case.
 - high false positive rate
 
-### `./autoethogram.py 'transcript analysis path'
+### `./autoethogram.py 'transcript analysis path' `
 - Uses gpt-35-turbo as a classifier to classify question type
 - Low accuracy in our use case, YMMV
 - Cheap
